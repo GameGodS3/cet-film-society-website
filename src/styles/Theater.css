@@ -23,28 +23,28 @@
 
 .screen {
   background: url("../../static/images/theater/screen.png") no-repeat bottom;
-  background-size: contain;
+  background-size: cover;
   transform: translateZ(-600px) scale(3);
   z-index: 1;
 }
 
 .seat-1 {
   background: url("../../static/images/theater/seat-1.png") no-repeat bottom;
-  background-size: contain;
+  background-size: cover;
   transform: translateZ(-250px) scale(1.83333);
   z-index: 4;
 }
 
 .seat-2 {
   background: url("../../static/images/theater/seat-2.png") no-repeat bottom;
-  background-size: contain;
+  background-size: cover;
   transform: translateZ(-125px) scale(1.4167);
   z-index: 5;
 }
 
 .seat-3 {
   background: url("../../static/images/theater/seat-3.png") no-repeat bottom;
-  background-size: contain;
+  background-size: cover;
   transform: translateZ(0) scale(1);
   z-index: 6;
 }
@@ -55,7 +55,7 @@
     rgba(255, 116, 161, 0.25) 86%,
     rgba(1, 0, 0, 0.25) 100%
   );
-  background-size: contain;
+  background-size: cover;
   transform: translateZ(0) scale(1);
   z-index: 7;
   display: flex;

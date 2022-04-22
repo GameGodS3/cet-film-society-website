@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./styles/App.css";
 import Navbar from "./Navbar";
 import Theater from "./Theater";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

@@ -2,4 +2,19 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
+  background-color: rgba(142, 50, 0, 0.16);
+  backdrop-filter: blur(16px);
+  width: 100%;
+}
+
+.navbar-link {
+  margin: 1.5rem;
+  color: #ffebc1;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.active-nav {
+  color: #bb8466;
 }
