@@ -5,6 +5,7 @@ import Theater from "./Theater";
 
 function App() {
   return (
+//      Inserting elements here in App.jsx after the Theater element might mess up. Refer Theater.jsx
     <div className="App">
       <Navbar />
       <Theater />

@@ -4,6 +4,7 @@ import "./styles/Theater.css";
 function Theater() {
   const [debugFlag, setDebugFlag] = useState(false);
 
+  // Add newer elements in a div with className parallax-group here.
   return (
     <div className="Theater">
       <button onClick={() => setDebugFlag(!debugFlag)}>Click Me</button>
