@@ -2,6 +2,7 @@ import React, { createRef, useState } from "react";
 import "./styles/Theater.css";
 import logo from "../static/images/CET Film Society logo 1.svg";
 import downArrow from "../static/images/downArrow.svg";
+import HeroSection from "./HeroSection";
 
 function Theater(props) {
   const [navbarDisplay, setNavbarDisplay] = useState(false);
@@ -10,9 +11,9 @@ function Theater(props) {
   const scrollRef = createRef();
   const zoomRef = createRef();
   let zoom = 1;
-  const zoomSpeed = 0.01;
+  const zoomSpeed = 0.05;
   document.addEventListener("wheel", (e) => {
-    if (zoomFlag && zoom > 0.4) {
+    if (zoomFlag && zoom > 0.5) {
       if (e.deltaY > 0) {
         scrollRef.current.style.transform = `scale(${(zoom -= zoomSpeed)})`;
       } else {
@@ -56,7 +57,12 @@ function Theater(props) {
           />
         </div>
       </div>
-      <div className="test parallax-group">Hello World</div>
+      <div className="content parallax-group">
+        <HeroSection />
+      </div>
+      <div className="content parallax-group">Review Section</div>
+      <div className="content parallax-group">Rangam Section</div>
+      <div className="content parallax-group">Associates Section</div>
     </div>
   );
 }

@@ -1,0 +1,54 @@
+.HeroSection {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.img-block {
+  width: 350px;
+  height: 350px;
+  background-color: red;
+}
+
+.hero-details {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50%;
+}
+.hero-title {
+  font-family: "Recoleta";
+  font-weight: 600;
+  font-size: 36px;
+  color: var(--brown100);
+}
+.hero-subtitle {
+  font-family: "Outfit";
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--brown80);
+}
+.cta {
+  display: flex;
+  font-family: "Outfit", sans-serif;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--brown100);
+  background-color: transparent;
+  border: var(--brown100) solid 3px;
+  border-radius: 100px;
+  max-width: fit-content;
+  max-height: fit-content;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.hero-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

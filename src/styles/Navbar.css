@@ -10,11 +10,11 @@
 
 .navbar-link {
   margin: 1.5rem;
-  color: #ffebc1;
+  color: var(--brown80);
   font-size: 20px;
   cursor: pointer;
 }
 
 .active-nav {
-  color: #bb8466;
+  color: var(--brown60);
 }
