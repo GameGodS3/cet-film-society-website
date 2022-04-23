@@ -1,0 +1,39 @@
+.ReviewSection {
+  padding: 3rem;
+  background-color: #ffffff;
+  height: 100%;
+}
+
+.review-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.review-section-header-outlink {
+  display: flex;
+  padding: 8px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-family: "Outfit";
+  font-weight: 600;
+  font-size: 14px;
+  gap: 1rem;
+  align-items: center;
+  color: var(--brown100);
+  user-select: none;
+}
+.review-section-header-outlink:hover {
+  background-color: var(--brown20);
+  cursor: pointer;
+  transition: all 0.1s;
+}
+.review-section-header-outlink:active {
+  transform: scale(0.9);
+}
+
+.review-cards {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -98,3 +98,45 @@
   z-index: 8;
   background-color: var(--brown5);
 }
+
+.section-title {
+  font-family: "Recoleta";
+  font-weight: 600;
+  font-size: 36px;
+  color: var(--brown100);
+  margin: 0.8rem 0;
+}
+.section-subtitle {
+  font-family: "Outfit";
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--brown80);
+}
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-family: "Outfit", sans-serif;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--brown100);
+  background-color: transparent;
+  border: var(--brown100) solid 3px;
+  border-radius: 100px;
+  max-width: fit-content;
+  max-height: fit-content;
+  cursor: pointer;
+  text-transform: uppercase;
+  user-select: none;
+}
+.cta:hover {
+  color: white;
+  background-color: var(--brown100);
+  cursor: pointer;
+  transition: all 0.1s;
+}
+.cta:active {
+  transform: scale(0.9);
+}
