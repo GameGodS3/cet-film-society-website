@@ -1,0 +1,18 @@
+.associates {
+	background-color: white;
+}
+
+.associates-heading {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: var(--brown100);
+}
+
+.image-container img{
+	margin: 0 3rem;
+}

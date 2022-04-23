@@ -1,0 +1,44 @@
+.rangam {
+  background-color: var(--brown5);
+}
+
+.heading-main {
+  color: var(--brown100);
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+}
+
+.heading-sub {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--brown80);
+}
+
+.explore-button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  color: var(--brown100);
+  border: 2px solid;
+  width: fit-content;
+  border-radius: 30px;
+  padding: 10px 20px;
+  padding-bottom: 15px;
+  cursor: pointer;
+}
+
+.explore-button:hover {
+	background-color: var(--brown20);
+}
+
+.explore-button:hover:active {
+	transform: scale(0.98);
+  }
+
+.explore-button span {
+  font-size: 30px;
+}
+

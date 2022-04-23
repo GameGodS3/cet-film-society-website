@@ -5,6 +5,8 @@ import ReviewSection from "./ReviewSection";
 import "./styles/Theater.css";
 import logo from "../static/images/CET Film Society logo 1.svg";
 import downArrow from "../static/images/downArrow.svg";
+import Rangam from "./Rangam";
+import Associates from "./Associates";
 
 function Theater(props) {
   const [navbarDisplay, setNavbarDisplay] = useState(false);
@@ -65,8 +67,12 @@ function Theater(props) {
       <div className="content parallax-group">
         <ReviewSection />
       </div>
-      <div className="content parallax-group">Rangam Section</div>
-      <div className="content parallax-group">Associates Section</div>
+      <div className="content parallax-group">
+        <Rangam />
+      </div>
+      <div className="content parallax-group">
+        <Associates />
+      </div>
       <div className="content parallax-group">Footer Section</div>
     </div>
   );

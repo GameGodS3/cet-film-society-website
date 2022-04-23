@@ -10,7 +10,7 @@ function ReviewSection() {
       <div className="review-section-header">
         <div className="review-section-head-text">
           <h2 className="section-title">Popular Reviews of the week</h2>
-          <div className="section-subtitle">
+          <div className="section-subtitle mb-3">
             Explore well curated film reviews from our community
           </div>
         </div>
