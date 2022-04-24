@@ -124,7 +124,7 @@
   font-weight: 600;
   color: var(--brown100);
   background-color: transparent;
-  border: var(--brown100) solid 3px;
+  border: var(--brown100) solid 2px;
   border-radius: 100px;
   max-width: fit-content;
   max-height: fit-content;
@@ -133,8 +133,7 @@
   user-select: none;
 }
 .cta:hover {
-  color: white;
-  background-color: var(--brown100);
+  background-color: var(--brown10);
   cursor: pointer;
   transition: all 0.1s;
 }

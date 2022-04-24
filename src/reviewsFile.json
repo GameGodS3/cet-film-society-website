@@ -1,0 +1,18 @@
+{
+  "reviews": [
+    {
+      "reviewId": "r01",
+      "movieName": "Cinema Paradiso",
+      "director": "Giuseppe Tornatore",
+      "author": "Jacob Koshy",
+      "reviewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quam! Soluta dignissimos enim vero rerum! Velit, mollitia dolorum. Blanditiis, nemo."
+    },
+    {
+      "reviewId": "r02",
+      "movieName": "Petite Maman",
+      "director": "John Cena",
+      "author": "John Doe",
+      "reviewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quam! Soluta dignissimos enim vero rerum! Velit, mollitia dolorum. Blanditiis, nemo."
+    }
+  ]
+}

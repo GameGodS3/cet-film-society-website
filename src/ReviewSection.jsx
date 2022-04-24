@@ -1,5 +1,7 @@
 import React from "react";
 import { Icon } from "@iconify/react";
+import { Link } from "react-router-dom";
+
 import ReviewCard from "./ReviewCard";
 
 import "./styles/ReviewSection.css";
@@ -20,9 +22,9 @@ function ReviewSection() {
         </div>
       </div>
       <div className="review-cards">
-        <ReviewCard />
-        <ReviewCard />
-        <ReviewCard />
+        <Link to={{ pathname: "/reviews", search: "?r01" }}>
+          <ReviewCard />
+        </Link>
       </div>
     </div>
   );
