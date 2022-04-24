@@ -1,12 +1,13 @@
 import React, { createRef, useState } from "react";
+
 import HeroSection from "./HeroSection";
 import ReviewSection from "./ReviewSection";
+import RangamSection from "./RangamSection";
+import Associates from "./Associates";
 
 import "./styles/Theater.css";
 import logo from "../static/images/CET Film Society logo 1.svg";
 import downArrow from "../static/images/downArrow.svg";
-import RangamSection from "./RangamSection";
-import Associates from "./Associates";
 
 function Theater(props) {
   const [navbarDisplay, setNavbarDisplay] = useState(false);

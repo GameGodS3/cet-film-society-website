@@ -1,0 +1,16 @@
+{
+  "reviews": [
+    {
+      "reviewId": "r01",
+      "movieName": "Cinema Paradiso",
+      "author": "Jacob Koshy",
+      "reviewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quam! Soluta dignissimos enim vero rerum! Velit, mollitia dolorum. Blanditiis, nemo."
+    },
+    {
+      "reviewId": "r02",
+      "movieName": "Petite Maman",
+      "author": "John Doe",
+      "reviewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quam! Soluta dignissimos enim vero rerum! Velit, mollitia dolorum. Blanditiis, nemo."
+    }
+  ]
+}
