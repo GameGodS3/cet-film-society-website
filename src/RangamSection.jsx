@@ -1,28 +1,30 @@
 import React from "react";
 import { Col, Image, Row } from "react-bootstrap";
-import "./styles/Rangam.css";
+import { Icon } from "@iconify/react";
+
+import "./styles/RangamSection.css";
 import rangamImg from "../static/images/rangam.png";
 
-function Rangam() {
+function RangamSection() {
   return (
-    <div className="rangam p-5">
+    <div className="rangam-section p-5">
       <Row>
-        <Col md={6} className="rangam-left p-5">
-          <div className="heading-main mt-5">
+        <Col md={6} className="rangam-section-left p-1">
+          <div className="section-title">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus
             dolor varius sed turpis
           </div>
-          <div className="heading-sub mt-3">
+          <div className="section-subtitle my-3">
             “A celebration of the independent soul of cinema, and a tribute to
             the
             <br />
             evergreen platform”
           </div>
-          <div className="explore-button m-3 ms-0 mt-5">
-            EXPLORE MORE <span>→</span>
+          <div className="cta">
+            EXPLORE MORE <Icon icon="ic:baseline-arrow-forward" />
           </div>
         </Col>
-        <Col md={6} className="rangam-right">
+        <Col md={6} className="rangam-section-right">
           <Image src={rangamImg} />
         </Col>
       </Row>
@@ -30,4 +32,4 @@ function Rangam() {
   );
 }
 
-export default Rangam;
+export default RangamSection;

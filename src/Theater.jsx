@@ -5,7 +5,7 @@ import ReviewSection from "./ReviewSection";
 import "./styles/Theater.css";
 import logo from "../static/images/CET Film Society logo 1.svg";
 import downArrow from "../static/images/downArrow.svg";
-import Rangam from "./Rangam";
+import RangamSection from "./RangamSection";
 import Associates from "./Associates";
 
 function Theater(props) {
@@ -68,7 +68,7 @@ function Theater(props) {
         <ReviewSection />
       </div>
       <div className="content parallax-group">
-        <Rangam />
+        <RangamSection />
       </div>
       <div className="content parallax-group">
         <Associates />

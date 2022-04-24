@@ -1,4 +1,4 @@
-.rangam {
+.rangam-section {
   background-color: var(--brown5);
 }
 
@@ -31,14 +31,13 @@
 }
 
 .explore-button:hover {
-	background-color: var(--brown20);
+  background-color: var(--brown20);
 }
 
 .explore-button:hover:active {
-	transform: scale(0.98);
-  }
+  transform: scale(0.98);
+}
 
 .explore-button span {
   font-size: 30px;
 }
-
