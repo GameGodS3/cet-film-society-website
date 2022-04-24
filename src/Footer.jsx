@@ -19,11 +19,11 @@ function Footer() {
               className="footer-social-icon facebook"
             ></a>
             <a
-              href="https://t.co/cetfilmsociety"
+              href="https://t.me/cetfilmsociety"
               className="footer-social-icon telegram"
             ></a>
             <a
-              href="mailto:cetfilmsociety@cet.ac.in"
+              href="mailto:cetfilmsociety@gmail.com"
               className="footer-social-icon mail"
             ></a>
           </div>
