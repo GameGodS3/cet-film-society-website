@@ -29,9 +29,9 @@ function Review() {
               height={250}
             />
           </div>
-          <div class="tag">Drama</div>
-          <div class="tag">Romance</div>
-          <div class="tag">Thriller</div>
+          <div className="tag">Drama</div>
+          <div className="tag">Romance</div>
+          <div className="tag">Thriller</div>
         </div>
         <div className="review-details">
           <div className="review-details-text">
@@ -40,7 +40,7 @@ function Review() {
             <h1 className="section-title">Cinema Paradiso</h1>
             <div className="section-subtitle">
 
-              { reviewList.map((review,index)=>{
+              { reviewList.reviews.map((review,index)=>{
                 if(reviewId == reviewList[index]) 
                 return(<div> Dir: {review.director}</div>)
               })};                
