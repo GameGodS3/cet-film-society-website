@@ -6,7 +6,7 @@
 
 .review-body {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   gap: 24px;
 }
 .review-details {
@@ -27,7 +27,7 @@
 }
 
 .review-details-text {
-  height: 350px;
+  height: fit-content;
   width: 350px;
 
   margin-top: 90px;
