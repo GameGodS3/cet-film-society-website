@@ -1,16 +1,18 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import moviePoster from "../static/images/movieposter.png";
-
+import reviewList from "./reviewsFile.json";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 import "./styles/Review.css";
 
 function Review() {
+  
   // reviewId variable will contain the review ID for searching the review from the reviewFile JSON
   const reviewId = useLocation().search.slice(1);
   console.log(reviewId);
+  
 
   return (
     <div className="Review">
@@ -37,7 +39,11 @@ function Review() {
             <hr />
             <h1 className="section-title">Cinema Paradiso</h1>
             <div className="section-subtitle">
-              Dir:
+
+              { reviewList.map((review,index)=>{
+                if(reviewId == reviewList[index]) 
+                return(<div> Dir: {review.director}</div>)
+              })};                
               <br />
               <br />
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
