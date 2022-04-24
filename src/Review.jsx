@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import moviePoster from "../static/images/movieposter.png";
 
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 import "./styles/Review.css";
 
