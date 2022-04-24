@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import moviePoster from "../static/images/movieposter.png";
 
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 import "./styles/Review.css";
 
@@ -18,7 +19,7 @@ function Review() {
       Review Page Layout
       {/* This is how you insert images in React */}
       <img src={moviePoster} alt="Movie Poster" />
-      {/* Footer will go here. Leave blank */}
+      <Footer />
     </div>
   );
 }
