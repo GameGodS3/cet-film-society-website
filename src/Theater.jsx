@@ -1,4 +1,4 @@
-import React, { createRef, useState } from "react";
+import React, { createRef, useState, useEffect } from "react";
 
 import HeroSection from "./HeroSection";
 import ReviewSection from "./ReviewSection";
@@ -11,11 +11,12 @@ import logo from "../static/images/CET Film Society logo 1.svg";
 import downArrow from "../static/images/downArrow.svg";
 
 function Theater(props) {
-  const [navbarDisplay, setNavbarDisplay] = useState(false);
   const zoomFlag = true;
 
   const scrollRef = createRef();
   const zoomRef = createRef();
+  const heroRef = createRef();
+
   let zoom = 1;
   const zoomSpeed = 0.05;
   document.addEventListener("wheel", (e) => {
@@ -26,11 +27,11 @@ function Theater(props) {
         scrollRef.current.style.transform = `scale(${(zoom += zoomSpeed)})`;
       }
     } else {
+      props.navbarDisplay(true);
       zoomRef.current.style.overflowY = "scroll";
     }
   });
 
-  // Add newer elements in a div with className parallax-group here.
   return (
     <div className="Theater" ref={zoomRef} style={{ overflowY: "hidden" }}>
       <div className="parallax-group">
@@ -56,14 +57,10 @@ function Theater(props) {
             src={downArrow}
             className="scroll-explore"
             alt="Scroll to Explore"
-            onClick={() => {
-              props.navbarDisplay(navbarDisplay);
-              setNavbarDisplay(!navbarDisplay);
-            }}
           />
         </div>
       </div>
-      <div className="content parallax-group">
+      <div className="content parallax-group" ref={heroRef}>
         <HeroSection />
       </div>
       <div className="content parallax-group">
