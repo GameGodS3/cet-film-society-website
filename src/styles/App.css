@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap");
+
 .App {
-  height: max-content;
+    font-family: "Outfit", sans-serif;
+    height: max-content;
 }
 a {
-  text-decoration: none !important;
+    text-decoration: none !important;
 }
