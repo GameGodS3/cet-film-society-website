@@ -1,5 +1,5 @@
 .Navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
@@ -10,11 +10,18 @@
 
 .navbar-link {
   margin: 1.5rem;
+}
+
+.navbar-link a {
   color: var(--brown80);
   font-size: 20px;
   cursor: pointer;
 }
 
-.active-nav {
+.navbar-link a:hover{
+  color: var(--brown80);
+}
+
+.active-nav a{
   color: var(--brown60);
 }

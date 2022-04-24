@@ -15,10 +15,39 @@ function Review() {
   return (
     <div className="Review">
       <Navbar />{" "}
-      {/*Don't Worry about this. Just implement the review page below this Navbar element */}
-      Review Page Layout
-      {/* This is how you insert images in React */}
-      <img src={moviePoster} alt="Movie Poster" />
+      <div className="review-body">
+        <div className="side-content">
+          <div className="image">
+            <img
+              src={moviePoster}
+              alt="Movie Poster"
+              style={{
+                maxWidth: "100%",
+              }}
+              height={250}
+            />
+          </div>
+          <div class="tag">Drama</div>
+          <div class="tag">Romance</div>
+          <div class="tag">Thriller</div>
+        </div>
+        <div className="review-details">
+          <div className="review-details-text">
+            <h6 className="section-subtitle">Review by</h6>
+            <hr />
+            <h1 className="section-title">Cinema Paradiso</h1>
+            <div className="section-subtitle">
+              Dir:
+              <br />
+              <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus esse voluptas, eaque, repellat excepturi nostrum
+              deleniti eveniet eligendi aut, nemo rem veniam tempore nulla!
+              Fugiat veniam quasi nihil saepe nulla.
+            </div>
+          </div>
+        </div>
+      </div>
       <Footer />
     </div>
   );
