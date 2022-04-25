@@ -3,6 +3,7 @@ import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 
 import ReviewCard from "./ReviewCard";
+import reviewList from "./reviewsFile.json";
 
 import "./styles/ReviewSection.css";
 
@@ -22,9 +23,9 @@ function ReviewSection() {
         </div>
       </div>
       <div className="review-cards">
-        <Link to={{ pathname: "/reviews", search: "?r01" }}>
-          <ReviewCard />
-        </Link>
+        {reviewList.reviews?.map((review, index) => {
+          if (index <= 2) return <ReviewCard reviewId={review.reviewId} />;
+        })}
       </div>
     </div>
   );

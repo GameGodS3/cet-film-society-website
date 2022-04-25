@@ -4,14 +4,32 @@
       "reviewId": "r01",
       "movieName": "Cinema Paradiso",
       "director": "Giuseppe Tornatore",
+      "year": 1988,
       "author": "Jacob Koshy",
-      "reviewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quam! Soluta dignissimos enim vero rerum! Velit, mollitia dolorum. Blanditiis, nemo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quam! Soluta dignissimos enim vero rerum! Velit, mollitia dolorum. Blanditiis, nemo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quam! Soluta dignissimos enim vero rerum! Velit, mollitia dolorum. Blanditiis, nemo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quam! Soluta dignissimos enim vero rerum! Velit, mollitia dolorum. Blanditiis, nemo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quam! Soluta dignissimos enim vero rerum! Velit, mollitia dolorum. Blanditiis, nemo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quam! Soluta dignissimos enim vero rerum! Velit, mollitia dolorum. Blanditiis, nemo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quam! Soluta dignissimos enim vero rerum! Velit, mollitia dolorum. Blanditiis, nemo."
+      "reviewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quam! Soluta dignissimos enim vero rerum! Velit, mollitia dolorum. Blanditiis, nemo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quam! Soluta dignissimos enim vero rerum! Velit, mollitia dolorum. Blanditiis, nemo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quam! Soluta dignissimos enim vero rerum! Velit, mollitia dolorum. Blanditiis, nemo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quam! Soluta dignissimos enim vero rerum! Velit, mollitia dolorum. \n\nBlanditiis, nemo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quam! Soluta dignissimos enim vero rerum! Velit, mollitia dolorum. Blanditiis, nemo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quam! Soluta dignissimos enim vero rerum! Velit, mollitia dolorum. Blanditiis, nemo.Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quam! Soluta dignissimos enim vero rerum! Velit, mollitia dolorum. Blanditiis, nemo."
     },
     {
       "reviewId": "r02",
+      "movieName": "Les Miserable",
+      "director": "Dwayne the Rock",
+      "author": "John Doe",
+      "year": 2020,
+      "reviewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quam! Soluta dignissimos enim vero rerum! Velit, mollitia dolorum. Blanditiis, nemo."
+    },
+    {
+      "reviewId": "r03",
       "movieName": "Petite Maman",
       "director": "John Cena",
       "author": "John Doe",
+      "year": 2020,
+      "reviewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quam! Soluta dignissimos enim vero rerum! Velit, mollitia dolorum. Blanditiis, nemo."
+    },
+    {
+      "reviewId": "r04",
+      "movieName": "Gramaphone",
+      "director": "John Cena",
+      "author": "Sudu",
+      "year": 2020,
       "reviewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quam! Soluta dignissimos enim vero rerum! Velit, mollitia dolorum. Blanditiis, nemo."
     }
   ]
