@@ -11,29 +11,38 @@ import logo from "../static/images/CET Film Society logo 1.svg";
 import downArrow from "../static/images/downArrow.svg";
 
 function Theater(props) {
-  const zoomFlag = true;
+  let initPosition;
 
-  const scrollRef = createRef();
-  const zoomRef = createRef();
-  const heroRef = createRef();
+  useEffect(() => {
+    initPosition = document
+      .querySelector(".HeroSection")
+      .getBoundingClientRect().top;
+    console.log("Init Position:" + initPosition);
+  }, []);
 
-  let zoom = 1;
-  const zoomSpeed = 0.05;
-  document.addEventListener("wheel", (e) => {
-    if (zoomFlag && zoom > 0.5) {
-      if (e.deltaY > 0) {
-        scrollRef.current.style.transform = `scale(${(zoom -= zoomSpeed)})`;
+  useEffect(() => {
+    const handleWheel = () => {
+      document.querySelector(".hero-text").style.transform = "scale(.4)";
+      document.querySelector(".Theater").style.overflowY = "scroll";
+      console.log();
+      let herotop = document
+        .querySelector(".HeroSection")
+        .getBoundingClientRect().top;
+      if (herotop < 50) {
+        props.navbarDisplay(true);
+      } else if (herotop === initPosition) {
+        document.querySelector(".hero-text").style.transform = "scale(1)";
+        props.navbarDisplay(false);
       } else {
-        scrollRef.current.style.transform = `scale(${(zoom += zoomSpeed)})`;
+        props.navbarDisplay(false);
       }
-    } else {
-      props.navbarDisplay(true);
-      zoomRef.current.style.overflowY = "scroll";
-    }
-  });
+    };
+    window.addEventListener("wheel", handleWheel);
+    return () => window.removeEventListener("wheel", handleWheel);
+  }, []);
 
   return (
-    <div className="Theater" ref={zoomRef} style={{ overflowY: "hidden" }}>
+    <div className="Theater" style={{ overflowY: "hidden" }}>
       <div className="parallax-group">
         <div className="parallax_layer screen"></div>
         <div className="parallax_layer seat-1"></div>
@@ -42,7 +51,6 @@ function Theater(props) {
 
         <div
           className="parallax_layer hero-text"
-          ref={scrollRef}
           style={{ transition: "all 0.5s" }}
         >
           <div className="landing-cover">
@@ -60,7 +68,7 @@ function Theater(props) {
           />
         </div>
       </div>
-      <div className="content parallax-group" ref={heroRef}>
+      <div className="content parallax-group">
         <HeroSection />
       </div>
       <div className="content parallax-group">

@@ -31,6 +31,22 @@
       "author": "Sudu",
       "year": 2020,
       "reviewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quam! Soluta dignissimos enim vero rerum! Velit, mollitia dolorum. Blanditiis, nemo."
+    },
+    {
+      "reviewId": "r05",
+      "movieName": "Mobile Phone",
+      "director": "John Cena",
+      "author": "Sudu",
+      "year": 2020,
+      "reviewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quam! Soluta dignissimos enim vero rerum! Velit, mollitia dolorum. Blanditiis, nemo."
+    },
+    {
+      "reviewId": "r06",
+      "movieName": "Gramaphone",
+      "director": "John Cena",
+      "author": "Sudu",
+      "year": 2020,
+      "reviewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quam! Soluta dignissimos enim vero rerum! Velit, mollitia dolorum. Blanditiis, nemo."
     }
   ]
 }
