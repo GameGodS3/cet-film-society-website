@@ -12,8 +12,8 @@ import wcc from "../static/images/associates/wcc.png";
 function Associates() {
     return (
         <div className="associates p-5">
-            <div className="associates-heading mb-5">OUR ASSOCIATES</div>
-            <div className="image-container d-flex justify-content-center align-items-center">
+            <div className="associates-heading mb-4">OUR ASSOCIATES</div>
+            <div className="image-container d-flex justify-content-center align-items-center py-3">
                 <Image src={chalachithra} />
                 <Image src={wcc} />
                 <Image src={ffsi} />
