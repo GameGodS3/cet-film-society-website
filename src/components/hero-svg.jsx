@@ -1,10 +1,10 @@
 import React from "react";
-import cinema from "../../static/images/cinema.png";
-import reviews from "../../static/images/reviews.png";
-import film from "../../static/images/film.png";
-import art from "../../static/images/art.png";
+import cinema from "../../static/images/hero-decor/cinema.png";
+import reviews from "../../static/images/hero-decor/reviews.png";
+import film from "../../static/images/hero-decor/film.png";
+import art from "../../static/images/hero-decor/art.png";
 
-export default function HomeSVG({ main }) {
+export default function HeroSVG() {
     return (
         <svg viewBox="0 0 597 348" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path

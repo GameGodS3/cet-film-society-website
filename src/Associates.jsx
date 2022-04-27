@@ -11,16 +11,18 @@ import wcc from "../static/images/associates/wcc.png";
 
 function Associates() {
     return (
-        <div className="associates p-5">
-            <div className="associates-heading mb-4">OUR ASSOCIATES</div>
-            <div className="image-container d-flex justify-content-center align-items-center py-3">
-                <Image src={chalachithra} />
-                <Image src={wcc} />
-                <Image src={ffsi} />
-                <Image src={filmcompanion} />
-                <Image src={ksfdc} />
-                <Image src={pkrosy} />
-                <Image src={potato} />
+        <div className="associates">
+            <div className="container py-5 row p-0 align-items-center justify-content-center mx-auto">
+                <div className="associates-heading mb-4">OUR ASSOCIATES</div>
+                <div className="image-container d-flex justify-content-center align-items-center pt-3 pb-5">
+                    <Image src={chalachithra} />
+                    <Image src={wcc} />
+                    <Image src={ffsi} />
+                    <Image src={filmcompanion} />
+                    <Image src={ksfdc} />
+                    <Image src={pkrosy} />
+                    <Image src={potato} />
+                </div>
             </div>
         </div>
     );

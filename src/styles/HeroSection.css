@@ -1,8 +1,10 @@
 .HeroSection {
   /* height: 100vh; */
-  display: flex;
-  align-items: center;
-  padding: 0 3rem;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* padding: 0 3rem; */
+  background-color: var(--brown5);
 }
 
 .img-block {
@@ -12,16 +14,16 @@
 }
 
 .hero-details {
-  max-width: 60%;
+  /* max-width: 60%; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 50%;
+  /* height: 50%; */
 }
-
+/*
 .hero-img {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
