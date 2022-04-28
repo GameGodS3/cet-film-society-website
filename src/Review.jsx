@@ -67,15 +67,16 @@ function Review() {
           ) : null}
           {reviewList.reviews?.map((review, index) => {
             if (
-              review.reviewId !== reviewId &&
-              revSuggestionCount < revSuggest
+              review.reviewId !== reviewId
+              // &&
+              // revSuggestionCount < revSuggest
             ) {
-              const revIdTemp =
-                index < 10
-                  ? "r0" + (index + 1).toString()
-                  : "r" + (index + 1).toString();
-              revSuggestionCount++;
-              return <ReviewCard reviewId={revIdTemp} />;
+              // const revIdTemp =
+              //   index < 10
+              //     ? "r0" + (index + 1).toString()
+              //     : "r" + (index + 1).toString();
+              // revSuggestionCount++;
+              return <ReviewCard reviewId={review.reviewId} />;
             }
           })}
         </div>
