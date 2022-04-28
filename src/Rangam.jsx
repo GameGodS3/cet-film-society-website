@@ -1,4 +1,6 @@
 import React from "react";
+import { Icon } from "@iconify/react";
+
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
@@ -28,14 +30,22 @@ function Rangam() {
 
   return (
     <div className="Rangam">
-      <Navbar />
-      <div className="carousel-container">
-        {catImagesArray.map((cat) => {
-          return <img src={cat} alt="Movie Poster" className="moviePoster" />;
-        })}
+      <Navbar />{" "}
+      <div className="rangam-carousel">
+        <button onClick={prevCarouselImage}>
+          {" "}
+          <Icon icon="ic:baseline-arrow-back-ios" />
+        </button>
+        <div className="carousel-container">
+          {catImagesArray.map((cat) => {
+            return <img src={cat} alt="Movie Poster" className="moviePoster" />;
+          })}
+        </div>
+        <button onClick={nextCarouselImage}>
+          {" "}
+          <Icon icon="ic:baseline-arrow-forward-ios" />
+        </button>
       </div>
-      <button onClick={prevCarouselImage}>Previous</button>
-      <button onClick={nextCarouselImage}>Next</button>
       <Footer />
     </div>
   );
