@@ -1,7 +1,7 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
-
+import ReviewsPage from "./ReviewsPage";
 import ReviewCard from "./ReviewCard";
 import reviewList from "./reviewsFile.json";
 
@@ -17,11 +17,13 @@ function ReviewSection() {
             Explore well curated film reviews from our community
           </div>
         </div>
-        <div className="review-section-header-outlink">
-          View All
-          <Icon icon="ic:baseline-arrow-forward-ios" />
+        <div className="review-section-header-outlink">       
         </div>
-      </div>
+          <Link to={'/reviews'}>
+            View All 
+            <Icon icon="ic:baseline-arrow-forward-ios" />
+          </Link>
+        </div>
       <div className="review-cards">
         {reviewList.reviews?.map((review, index) => {
           if (index <= 2) return <ReviewCard reviewId={review.reviewId} />;

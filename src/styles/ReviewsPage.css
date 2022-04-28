@@ -1,0 +1,11 @@
+.ReviewsPage {
+    margin-top: 120px;
+}
+.review-section-head-text{
+    margin: 40px;
+}
+.review-cards {
+    display: flex;
+    align-items: flex-start;
+    
+}
