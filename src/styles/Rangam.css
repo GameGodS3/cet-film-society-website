@@ -1,0 +1,25 @@
+.carousel-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moviePoster {
+  margin: -2rem;
+  width: 200px;
+  height: 300px;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 14px #0000008e;
+  z-index: -1;
+  transition: all 0.5s;
+}
+.moviePoster:nth-child(3) {
+  transform: scale(1.2);
+  z-index: 0;
+}
+.moviePoster:last-of-type,
+.moviePoster:first-of-type {
+  transform: scale(0.8);
+  z-index: -2;
+}

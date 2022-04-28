@@ -6,6 +6,7 @@ import ReviewsPage from "./ReviewsPage";
 import App from "./App";
 import "./styles/index.css";
 import About from "./About";
+import Rangam from "./Rangam";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -15,7 +16,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/reviews" element={<ReviewsPage />} />
         <Route path="/reviews/:id" element={<Review />} />
         <Route path="/about" element={<About />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/rangam" element={<Rangam />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
