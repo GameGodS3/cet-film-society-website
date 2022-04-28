@@ -96,7 +96,7 @@
 
 .content {
   z-index: 8;
-  background-color: var(--brown5);
+  /* background-color: var(--brown5); */
   height: fit-content;
 }
 
