@@ -103,10 +103,17 @@
 .section-title {
   font-family: "Recoleta";
   font-weight: 600;
-  font-size: 36px;
+  font-size: calc(1.5rem + 1vw);
   color: var(--brown100);
   margin: 0.8rem 0;
 }
+
+@media (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+  }
+}
+
 .section-subtitle {
   font-family: "Outfit";
   font-weight: 400;

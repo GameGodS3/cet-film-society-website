@@ -18,7 +18,7 @@ function Navbar() {
       exact: true,
     },
     {
-      name: "Articles",
+      name: "Film Reviews",
       path: "/reviews",
       exact: true,
     },
@@ -28,8 +28,8 @@ function Navbar() {
       exact: true,
     },
     {
-      name: "Activities",
-      path: "/activities",
+      name: "Miscellanea",
+      path: "/miscellanea",
       exact: true,
     },
     {
