@@ -19,7 +19,7 @@ function Navbar() {
     },
     {
       name: "Articles",
-      path: "/articles",
+      path: "/reviews",
       exact: true,
     },
     {
@@ -42,10 +42,15 @@ function Navbar() {
   return (
     <div className="Navbar d-flex justify-content-end pe-5">
       <div className="navbar-links d-flex">
-        {navbarItems.map((item,index) => {
-          console.log(path  )
+        {navbarItems.map((item, index) => {
+          console.log(path);
           return (
-            <div className={`navbar-link ${item.path === path ? "active-nav" : ""}`} key={index}>
+            <div
+              className={`navbar-link ${
+                item.path === path ? "active-nav" : ""
+              }`}
+              key={index}
+            >
               <Link to={item.path}>{item.name}</Link>
             </div>
           );

@@ -42,11 +42,11 @@
     },
     {
       "reviewId": "r06",
-      "movieName": "Gramaphone",
-      "director": "John Cena",
-      "author": "Sudu",
+      "movieName": "Sample Movie",
+      "director": "Sample Director",
+      "author": "Sample Author",
       "year": 2020,
-      "reviewText": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quam! Soluta dignissimos enim vero rerum! Velit, mollitia dolorum. Blanditiis, nemo."
+      "reviewText": "Put the long descriptive review text here. For paragraph breaks, put \n . Remember to provide unique reviewId to every single review in a sequence. This is very important. Also, to add more reviews, put a comma after the next curly brace and then copy-paste from the beginning to end of this curly brace. Also, please remove the dummy movie names. It was for testing."
     }
   ]
 }

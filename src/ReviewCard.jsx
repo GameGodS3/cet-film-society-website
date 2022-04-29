@@ -11,7 +11,7 @@ function ReviewCard(props) {
   return (
     <Link
       to={{
-        pathname: "/reviews",
+        pathname: "/reviews/review",
         search: `?${reviewId}`,
       }}
       className="ReviewCard"

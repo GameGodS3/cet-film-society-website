@@ -8,11 +8,11 @@ import "./styles/Rangam.css";
 
 function Rangam() {
   const catImagesArray = [
-    "http://placekitten.com/200/300",
-    "http://placekitten.com/100/200",
-    "http://placekitten.com/400/600",
-    "http://placekitten.com/500/800",
-    "http://placekitten.com/60/100",
+    "http://picsum.photos/200/300",
+    "http://picsum.photos/100/200",
+    "http://picsum.photos/400/600",
+    "http://picsum.photos/500/800",
+    "http://picsum.photos/60/100",
   ];
 
   const nextCarouselImage = () => {

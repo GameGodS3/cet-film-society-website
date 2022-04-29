@@ -1,0 +1,37 @@
+.credit-content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.credit-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.CreditsCard {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+  padding: 0 0.2rem;
+  background-color: var(--brown10);
+  color: var(--brown80);
+  border-radius: 50px;
+}
+.CreditsCard div {
+  margin: 0.5rem;
+}
+.CreditsCard:hover {
+  box-shadow: rgba(0, 0, 0, 0.301) 0 0 20px;
+  transition: all 0.2s;
+}
+
+.credit-img img {
+  max-width: 60px;
+  border-radius: 100px;
+}
