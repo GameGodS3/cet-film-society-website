@@ -39,7 +39,7 @@ function Footer() {
                         </div>
                         <div className="footer-menu">
                             <div className="footer-menu-item">About</div>
-                            <div className="footer-menu-item">Activities</div>
+                            <div className="footer-menu-item">Miscellanea</div>
                             <div className="footer-menu-item">Contact </div>
                         </div>
                     </div>

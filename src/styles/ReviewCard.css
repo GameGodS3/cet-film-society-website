@@ -7,15 +7,16 @@
   gap: 50px;
   height: var(--card-height);
   width: var(--card-width);
-  background-image: url("../../static/images/reviewcard.png");
+  background-image: url("../../static/images/review-card.svg");
   background-position: center;
   background-size: cover;
   padding: 10px;
   user-select: none;
 }
 .ReviewCard:hover {
+  background-image: url("../../static/images/review-card-white.svg");
   filter: drop-shadow(var(--brown20) 0 0 16px);
-  transition: all 0.1s;
+  transition: all 0.3s;
   cursor: pointer;
 }
 .ReviewCard:active {

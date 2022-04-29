@@ -9,7 +9,7 @@ import RangamSVG from "./components/rangam-svg.jsx";
 function RangamSection() {
     return (
         <div className="rangam-section">
-            <div className="container row p-0 align-items-center justify-content-center mx-auto">
+            <div className="container row p-md-0 align-items-center justify-content-center mx-auto">
                 <div className="rangam-section-left col-12 col-md-6 text-center text-md-start align-items-center align-items-md-start">
                     <div className="section-title">
                         Rangam Film Festival, an indulgence into the art of watching movies
@@ -19,7 +19,7 @@ function RangamSection() {
                         <br />
                         evergreen platform”
                     </div>
-                    <div className="cta">
+                    <div className="cta mb-4">
                         EXPLORE MORE <Icon icon="ic:baseline-arrow-forward" />
                     </div>
                 </div>
