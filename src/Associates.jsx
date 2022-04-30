@@ -13,7 +13,7 @@ function Associates() {
     return (
         <div className="associates">
             <div className="container py-5 row p-0 align-items-center justify-content-center mx-auto">
-                <div className="associates-heading mb-4">OUR ASSOCIATES</div>
+                <div className="associates-heading mt-4 mb-4">OUR ASSOCIATES</div>
                 <div className="image-container d-flex justify-content-center align-items-center pt-3 pb-5">
                     <Image src={chalachithra} />
                     <Image src={wcc} />
