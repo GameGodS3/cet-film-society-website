@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import "./styles/Footer.css";
 import creamLogo from "../static/images/logo-cream.png";
+import Credits from "./Credits";
 
 function Footer() {
+  const [showCredits, setShowCredits] = useState(false);
+  const endBottom = useRef();
+  const toggleCredits = () => {
+    setShowCredits(!showCredits);
+    endBottom.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="Footer">
       <div className="footer-vector" />
@@ -49,9 +57,20 @@ function Footer() {
         <div className="footer-credits pt-4 pb-5">
           &copy; 2022 College of Engineering Trivandrum. All Rights Reserved.{" "}
           <br /> Designed and Developed by{" "}
-          <Link to="/credits">Film Society Web Team</Link>
+          <a
+            style={{
+              color: "var(--brown10)",
+              textDecoration: "underline",
+              cursor: "pointer",
+            }}
+            onClick={toggleCredits}
+          >
+            Film Society Web Team
+          </a>
         </div>
       </div>
+      {showCredits ? <Credits /> : null}
+      <div ref={endBottom}></div>
     </div>
   );
 }

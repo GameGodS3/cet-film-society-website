@@ -44,8 +44,7 @@ function Credits() {
   ];
 
   return (
-    <div className="Credits">
-      <Navbar />
+    <div className="Credits" id="credits">
       <div className="credit-content">
         <h1 className="section-title">Web Design and Development Team</h1>
         <div className="credit-container">
@@ -60,7 +59,6 @@ function Credits() {
           })}
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

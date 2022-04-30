@@ -7,11 +7,14 @@ import Footer from "./Footer";
 import "./styles/Rangam.css";
 
 function Rangam() {
-  const catImagesArray = [
+  let catImagesArray = [
     "http://picsum.photos/200/300",
     "http://picsum.photos/100/200",
     "http://picsum.photos/400/600",
     "http://picsum.photos/500/800",
+    "http://picsum.photos/60/100",
+    "http://picsum.photos/60/100",
+    "http://picsum.photos/60/100",
     "http://picsum.photos/60/100",
   ];
 
@@ -30,18 +33,18 @@ function Rangam() {
 
   return (
     <div className="Rangam">
-      <Navbar />{" "}
       <div className="rangam-carousel">
-        <button onClick={prevCarouselImage}>
+        <Navbar /> <div className="section-title">Page Under Construction</div>
+        <button onClick={nextCarouselImage}>
           {" "}
           <Icon icon="ic:baseline-arrow-back-ios" />
         </button>
         <div className="carousel-container">
-          {catImagesArray.map((cat) => {
+          {catImagesArray.slice(0, 5).map((cat) => {
             return <img src={cat} alt="Movie Poster" className="moviePoster" />;
           })}
         </div>
-        <button onClick={nextCarouselImage}>
+        <button onClick={prevCarouselImage}>
           {" "}
           <Icon icon="ic:baseline-arrow-forward-ios" />
         </button>
