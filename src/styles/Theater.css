@@ -126,7 +126,7 @@
   justify-content: center;
   gap: 12px;
   font-family: "Outfit", sans-serif;
-  padding: 8px 16px;
+  padding: 10px 18px;
   font-size: 14px;
   font-weight: 600;
   color: var(--brown100);
@@ -146,4 +146,8 @@
 }
 .cta:active {
   transform: scale(0.9);
+}
+
+a:hover {
+  color: #8E3200;
 }
